@@ -3,12 +3,14 @@ import styles from './button.module.scss';
 
 export interface ButtonProps {
     className?: string;
+    primary:boolean;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const Button = ({ className }: ButtonProps) => {
-    return <div className={classNames(className, styles.button)}>Submit</div>;
+export const Button = ({ className, primary=true }: ButtonProps) => {
+    return (
+        <button className={classNames(styles.root,{[styles.secondery]: !primary},className)}>
+        Submit </button>
+    )
 };
+
+
