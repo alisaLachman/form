@@ -1,8 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
-import { Button } from '../../components/button/button';
 import { Input } from '../../components/input/input';
 import { Checkbox } from '../../components/checkbox/checkbox';
 import { Dropdown } from '../../components/dropdown/dropdown';
+import { Button } from '../../components/button/button';
 
 export default createBoard({
     name: 'bare-Form ',
@@ -25,7 +25,7 @@ export default createBoard({
                 <Checkbox />
             </div>
             <div className="buttonContainer">
-                <Button className="Button" />
+                <Button state="primary" />
             </div>
         </div>
     ),

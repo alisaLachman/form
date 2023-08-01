@@ -3,14 +3,13 @@ import styles from './button.module.scss';
 
 export interface ButtonProps {
     className?: string;
-    primary:boolean;
+    state: 'secondery' | 'primary';
 }
 
-export const Button = ({ className, primary=true }: ButtonProps) => {
+export const Button = ({ className, state }: ButtonProps) => {
     return (
-        <button className={classNames(styles.root,{[styles.secondery]: !primary},className)}>
-        Submit </button>
-    )
+        <button className={classNames(styles.root, { [styles[state]]: state }, className)}>
+            Submit{' '}
+        </button>
+    );
 };
-
-
