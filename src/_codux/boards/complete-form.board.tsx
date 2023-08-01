@@ -5,7 +5,7 @@ import { Dropdown } from '../../components/dropdown/dropdown';
 import { Button } from '../../components/button/button';
 
 export default createBoard({
-    name: 'bare-Form ',
+    name: 'Complete form',
     Board: () => (
         <div className="formContainer">
             <div className="formHeader">
