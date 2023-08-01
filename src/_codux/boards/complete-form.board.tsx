@@ -9,8 +9,8 @@ export default createBoard({
     Board: () => (
         <div className="formContainer">
             <div className="formHeader">
-                <h1 className="h1">Heading 1</h1>
-                <p className="text">This is a paragraph.</p>
+                <h1 className="h1">Create your account</h1>
+                <p className="text">Create an account to start your fitness journey</p>
             </div>
             <div className="userName">
                 <Input color="yellow" title="Name" />
