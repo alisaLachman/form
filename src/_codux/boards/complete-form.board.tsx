@@ -19,7 +19,7 @@ export default createBoard({
             <div className="userInfo">
                 <Input color="yellow" title="phone Number" />
                 <Input color="yellow" title="Email" />
-                <Dropdown color="yellow" title={'Gender'} />
+                <Dropdown color="yellow" title={'Gender'} selection={'Menu'} />
             </div>
             <div className="checkbox">
                 <Checkbox />
