@@ -5,13 +5,14 @@ export interface DropdownProps {
     className?: string;
     color: 'yellow' | 'blue' | 'pink' | 'purple';
     title: string;
+    selection: string;
 }
 
-export const Dropdown = ({ className, color, title }: DropdownProps) => {
+export const Dropdown = ({ className, color, title, selection }: DropdownProps) => {
     return (
 <label className={styles.label}>{title}
         <select className={classNames(styles.root, { [styles[color]]: color, className})}>
-            <option>Man</option>
+            <option className={styles.selection}>{selection} </option>
             <option>Women</option>
             <option>Other</option>
         </select>

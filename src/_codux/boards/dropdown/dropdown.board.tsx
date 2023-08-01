@@ -5,6 +5,6 @@ import Classnames from 'classnames';
 
 export default createBoard({
     name: 'Dropdown',
-    Board: () => <Dropdown color="yellow" title={'Gender'} />,
+    Board: () => <Dropdown color="yellow" title={'Gender'} selection={'man'} />,
     isSnippet: true,
 });
