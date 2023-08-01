@@ -1,30 +1,33 @@
 .root {
-   padding: 5px;
+  padding: 5px;
   width: 100%;
   color: #151054;
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
 }
 
-
 .yellow {
-  background-color: #fff8df;
-  border: 2px solid #fce3b1;
+  background-color: #fefbf2;
+  border: 2px solid #faecbf;
 }
 
 .blue {
-  background-color: #dfebff;
-  border: 2px solid #bed6ff;
+  background-color: #f1f4fa;
+  border: 2px solid #d6e5fe;
 }
 
 .pink {
-  background-color: #fedfff;
-  border: 2px solid #f2b3e9;
+  background-color: #fdf5fe;
+  border: 2px solid #fedfff;
 }
 
 .purple {
-  background-color: #eddfff;
-  border: 2px solid #d4acf4;
+  background-color: #f7f3fc;
+  border: 2px solid #eddfff;
+}
+
+
+.label{
+  display:block;
 }

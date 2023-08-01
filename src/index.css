@@ -73,23 +73,57 @@ code {
 }
 
 .formContainer {
-  width: 320px;
-  height: 440px;
+  width: auto;
+  height: auto;
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   box-shadow: 0.93px -0.37px 24px -10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  justify-content: space-evenly;
 }
 
 .formHeader {
-  padding: 15px;
+  padding: 0px 0px 16px;
   margin-top: 20px;
-  text-align: center;
 }
 .userName {
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  gap: 2px;
+  gap: 0px 20px;
+  grid-auto-flow: column;
+}
+
+.Button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #dfebff;
+  border: 2px solid #bed6ff;
+  color: #151054;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100px;
+}
+.buttonContainer {
+  justify-content: end;
+  display: flex;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+  margin: 16px 0px;
+}
+.checkbox {
+}
+.h1 {
+  margin: 0px;
+}
+.text {
+  margin: 0px;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
 }

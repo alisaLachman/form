@@ -5,4 +5,5 @@ import Classnames from 'classnames';
 export default createBoard({
     name: 'input text',
     Board: () => <Input color="yellow" title="phone Number" />,
+    isSnippet: true,
 });
