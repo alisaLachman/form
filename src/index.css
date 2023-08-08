@@ -96,7 +96,11 @@ code {
 
 .buttonContainer {
   justify-content: end;
-  display: flex;
+  display: grid;
+  grid-template-rows: none;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto;
+  gap: 16px;
 }
 .userInfo {
   display: flex;

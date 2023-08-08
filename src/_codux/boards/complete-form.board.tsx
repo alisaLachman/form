@@ -25,7 +25,8 @@ export default createBoard({
                 <Checkbox />
             </div>
             <div className="buttonContainer">
-                <Button state="primary" />
+                <Button state="secondery" title={'Cancle'} />
+                <Button state="primary" title={'Submit'} />
             </div>
         </div>
     ),
@@ -34,4 +35,6 @@ export default createBoard({
         windowHeight: 700,
         windowWidth: 1000,
     },
+
+    isSnippet: true,
 });
