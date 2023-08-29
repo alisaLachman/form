@@ -3,14 +3,14 @@ import { Input } from '../../components/input/input';
 import { Checkbox } from '../../components/checkbox/checkbox';
 import { Dropdown } from '../../components/dropdown/dropdown';
 import { Button } from '../../components/button/button';
+import { Header } from '../../components/header/header';
 
 export default createBoard({
     name: 'Complete form',
     Board: () => (
         <div className="formContainer">
             <div className="formHeader">
-                <h1 className="h1">Create your account</h1>
-                <p className="text">Create an account to start your fitness journey</p>
+                <Header />
             </div>
             <div className="userName">
                 <Input color="yellow" title="Name" />
@@ -36,5 +36,5 @@ export default createBoard({
         windowWidth: 1000,
     },
 
-    isSnippet: true,
+    isSnippet: false,
 });
