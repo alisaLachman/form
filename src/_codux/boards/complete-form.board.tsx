@@ -5,6 +5,7 @@ import { Dropdown } from '../../components/dropdown/dropdown';
 import { Button } from '../../components/button/button';
 import { Header } from '../../components/header/header';
 
+
 export default createBoard({
     name: 'Complete form',
     Board: () => (
@@ -34,7 +35,13 @@ export default createBoard({
     environmentProps: {
         windowHeight: 700,
         windowWidth: 1000,
+        canvasMargin: {
+            bottom: 0,
+            top: 0,
+            right: 0,
+            left: 0
+        }
     },
 
-    isSnippet: false,
+    isSnippet: true,
 });
