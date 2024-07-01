@@ -6,14 +6,13 @@ import { Dropdown } from '../../components/dropdown/dropdown';
 import { Button } from '../../components/button/button';
 import { Header } from '../../components/header/header';
 
+
+
 export interface FormProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
+
 export const Form = ({ className }: FormProps) => {
     return (
         <div className="formContainer">

@@ -1,10 +1,11 @@
 import classNames from 'classnames';
 import styles from './header.module.scss';
 
+const userNumbertext = "Two Hundred";
+
 export interface HeaderProps {
     className?: string;
     userNumber?: number;
-    userNumbertext?: string;
 }
 
 /**
