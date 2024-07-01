@@ -1,14 +1,21 @@
-import { createBoard } from '@wixc3/react-board';
+import classNames from 'classnames';
+import styles from './form.module.scss';
 import { Input } from '../../components/input/input';
 import { Checkbox } from '../../components/checkbox/checkbox';
 import { Dropdown } from '../../components/dropdown/dropdown';
 import { Button } from '../../components/button/button';
 import { Header } from '../../components/header/header';
 
-export default createBoard({
-    name: 'Complete form',
-    Board: () => (
-        <div className="formContainer">
+export interface FormProps {
+    className?: string;
+}
+
+/**
+ * This component was created using Codux's Default new component template.
+ * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
+ */
+export const Form = ({ className }: FormProps) => {
+    return <div className="formContainer">
             <div className="formHeader">
                 <Header />
             </div>
@@ -29,12 +36,4 @@ export default createBoard({
                 <Button state="primary" title={'Submit'} />
             </div>
         </div>
-    ),
-
-    environmentProps: {
-        windowHeight: 700,
-        windowWidth: 1000,
-    },
-
-    isSnippet: true,
-});
+};
