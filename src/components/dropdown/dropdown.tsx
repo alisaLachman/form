@@ -14,6 +14,7 @@ export const Dropdown = ({ className, color, title, selection }: DropdownProps) 
         <select className={classNames(styles.root, { [styles[color]]: color, className})}>
             <option className={styles.selection}>{selection} </option>
             <option>Women</option>
+            <option>Man</option>
             <option>Other</option>
         </select>
         </label>

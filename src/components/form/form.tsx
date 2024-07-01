@@ -15,7 +15,8 @@ export interface FormProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Form = ({ className }: FormProps) => {
-    return <div className="formContainer">
+    return (
+        <div className="formContainer">
             <div className="formHeader">
                 <Header />
             </div>
@@ -26,7 +27,7 @@ export const Form = ({ className }: FormProps) => {
             <div className="userInfo">
                 <Input color="yellow" title="phone Number" />
                 <Input color="yellow" title="Email" />
-                <Dropdown color="yellow" title={'Gender'} selection={'Menu'} />
+                <Dropdown color="yellow" title={'Gender'} selection={'Select your gender'} />
             </div>
             <div className="checkbox">
                 <Checkbox />
@@ -36,4 +37,5 @@ export const Form = ({ className }: FormProps) => {
                 <Button state="primary" title={'Submit'} />
             </div>
         </div>
+    );
 };
