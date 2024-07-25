@@ -4,9 +4,7 @@ import ButtonPrimaryCover from '../../../assets/ButtonPrimary.png';
 
 export default createBoard({
     name: 'Button primary',
-    Board: () => <Button state="primary" title={'Submit'} />,
+    Board: () => <Button state="primary" title={'Submit'} disabled={false} />,
     cover: ButtonPrimaryCover,
     isSnippet: true,
 });
-
-

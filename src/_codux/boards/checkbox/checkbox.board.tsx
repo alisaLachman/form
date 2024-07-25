@@ -4,8 +4,7 @@ import CheckBoxCover from '../../../assets/CheckBox.png';
 
 export default createBoard({
     name: 'Checkbox',
-    Board: () => <Checkbox />,
-     cover:CheckBoxCover,
+    Board: () => <Checkbox pharagraph={10000} />,
+    cover: CheckBoxCover,
     isSnippet: true,
-   
 });
