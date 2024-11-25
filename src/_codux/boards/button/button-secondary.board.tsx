@@ -4,11 +4,7 @@ import ButtonSeconderyCover from '../../../assets/ButtonSecondery.png';
 
 export default createBoard({
     name: 'Button secondary',
-    Board: () => (
-        <Button state="secondery" title={'Cancle'}>
-            <a href="/">Link</a>
-        </Button>
-    ),
+    Board: () => <Button state="secondery" title={'Cancle'}></Button>,
     cover: ButtonSeconderyCover,
     isSnippet: true,
 });
